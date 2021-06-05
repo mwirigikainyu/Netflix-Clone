@@ -1,13 +1,38 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: white;
+  scrollbar-width: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.nav_active {
+  background-color: black;
+}
+.search_active {
+  width: 300px;
+  visibility: visible;
+}
+.space {
+  padding-right: 10px;
+}
+.mySwiper .swiper-button-next {
+  height: 80%;
+  padding: 20px;
+  top: 50px;
+  color: red;
+}
+.swiper-button-next:hover {
+  transform: scale(1.3);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mySwiper .swiper-button-prev {
+  display: none;
 }
