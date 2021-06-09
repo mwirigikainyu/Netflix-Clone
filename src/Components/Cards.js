@@ -15,9 +15,25 @@ function Cards(props) {
 }
 
 const Card = styled.div`
+  @media only screen and (min-width: 360px) {
+    img {
+      width: 200px;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    img {
+      width: 200px;
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    img {
+      width: 150px;
+    }
+  }
+
   display: flex;
   img {
-    width: 200px;
+    /* width: 200px; */
     padding: 10px;
     border-radius: 15px;
     transition: ease-in-out 450ms;

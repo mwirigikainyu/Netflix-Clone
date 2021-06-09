@@ -45,7 +45,7 @@ const HeaderDetails = styled.div`
     padding: 40px;
   }
   @media only screen and (max-width: 460px) {
-    top: 500px;
+    top: 450px;
     p {
       visibility: hidden;
     }
