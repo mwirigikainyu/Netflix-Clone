@@ -56,12 +56,13 @@ const Nav = styled.nav`
   z-index: 2;
   transition: background-color 1s;
   img {
+    margin: 10px 10px 0;
     vertical-align: middle;
   }
   ul {
     display: inline-block;
     list-style: none;
-    margin-left: 30px;
+    margin-left: 20px;
     li {
       color: white;
       padding: 10px;
