@@ -25,9 +25,33 @@ export default function Header(props) {
 }
 
 const HeaderDetails = styled.div`
-  width: 700px;
+  @media only screen and (max-width: 1000px) {
+    width: 500px;
+    font-size: 20px;
+    p {
+      font-size: medium;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    font-size: inherit;
+    top: 400px;
+    p {
+      font-size: small;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+  }
+  @media only screen and (max-width: 460px) {
+    top: 500px;
+    p {
+      visibility: hidden;
+    }
+  }
+  width: 600px;
   padding: 40px;
-  font-size: 20px;
   position: relative;
   top: 200px;
   z-index: 1;
@@ -35,13 +59,14 @@ const HeaderDetails = styled.div`
     line-height: 1.5;
   }
   button {
+    margin: 10px;
     padding: 15px 30px;
-    margin: 20px 10px;
-    background-color: #00000078;
-    color: white;
+    background-color: white;
+    border-radius: 5px;
+    color: #00000078;
     border: none;
     &:hover {
-      background-color: white;
+      cursor: pointer;
       color: black;
     }
   }
