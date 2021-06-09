@@ -48,7 +48,7 @@ const HeaderDetails = styled.div`
 `;
 
 const Fade = styled.img`
-  width: 100%;
+  height: inherit;
   position: absolute;
-  bottom: 180px;
+  top: 0;
 `;
