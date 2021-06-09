@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function NavBar(props) {
@@ -36,7 +35,6 @@ export default function NavBar(props) {
       </div>
       <form action="submit">
         <div onClick={toggleSearchBar}>
-          <FontAwesomeIcon icon={faBell} />
           <input
             className={`${search && "search_active"}`}
             type="search"
