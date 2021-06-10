@@ -34,7 +34,7 @@ const HeaderDetails = styled.div`
   }
   @media only screen and (max-width: 750px) {
     font-size: inherit;
-    top: 400px;
+    top: 300px;
     p {
       font-size: small;
     }
@@ -45,6 +45,7 @@ const HeaderDetails = styled.div`
     padding: 0 20px 20px;
   }
   @media only screen and (max-width: 460px) {
+    top: 500px;
     font-size: small;
     padding: 0;
     p {
