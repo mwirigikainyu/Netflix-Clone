@@ -78,6 +78,10 @@ const Fade = styled.img`
     -o-background-size: contain;
     background-size: contain;
   }
+  @media (max-width: 450px) {
+    display: none;
+  }
+  width: inherit;
   height: inherit;
   position: absolute;
   top: 0;
