@@ -69,6 +69,9 @@ const Nav = styled.nav`
     div {
       margin-top: 10px;
     }
+    form {
+      visibility: hidden;
+    }
   }
   position: fixed;
   width: 100%;
@@ -103,8 +106,5 @@ const Nav = styled.nav`
       color: white;
       background: rgba(0, 0, 0, 0.5);
     }
-    /* @media only screen and (max-width: 600) {
-      visibility: hidden;
-    } */
   }
 `;
