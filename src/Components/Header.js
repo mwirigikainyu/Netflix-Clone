@@ -42,9 +42,11 @@ const HeaderDetails = styled.div`
   @media only screen and (max-width: 600px) {
     text-align: center;
     width: 100%;
-    padding: 40px;
+    padding: 0 20px 20px;
   }
   @media only screen and (max-width: 460px) {
+    font-size: small;
+    padding: 0;
     p {
       display: none;
     }
@@ -58,8 +60,8 @@ const HeaderDetails = styled.div`
     line-height: 1.5;
   }
   button {
-    margin: 10px;
     padding: 15px 30px;
+    margin: 10px;
     background-color: white;
     border-radius: 5px;
     color: #00000078;
@@ -67,6 +69,9 @@ const HeaderDetails = styled.div`
     &:hover {
       cursor: pointer;
       color: black;
+    }
+    @media only screen and (max-width: 460px) {
+      padding: 10px 15px;
     }
   }
 `;
