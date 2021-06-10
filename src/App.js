@@ -4,7 +4,6 @@ import requests from "./data/requests";
 import { connect } from "react-redux";
 import {
   saveMovies,
-  saveGenres,
   saveTrending,
   saveShows,
   saveSplashImage,
@@ -13,19 +12,14 @@ import {
 import NavBar from "./Components/NavBar";
 import Row from "./Components/Row";
 import Header from "./Components/Header";
-import Genres from "./Components/Genres";
 import Footer from "./Components/Footer";
 
 class App extends Component {
   async componentDidMount() {
-    const getGenres = axios.get(requests.getTvGenres);
     const getTrending = axios.get(requests.getTrending);
     const getPopularMovies = axios.get(requests.getPopularMovies);
     const getPopularShows = axios.get(requests.getPopularShows);
 
-    await getGenres.then((res) => {
-      this.props.dispatch(saveGenres(res.data.genres));
-    });
     await getTrending.then((res) => {
       this.props.dispatch(saveTrending(res.data.results));
     });
@@ -56,7 +50,6 @@ class App extends Component {
         />
         {/* {this.props.movies ? <Row data={this.props.movies} /> : <p>Loading...</p>} loader*/}
         <Row data={this.props.movies} title="Movies" />
-        <Genres data={this.props.genres} title="Genres" />
         <Row data={this.props.shows} title="Tv Shows" />
         <Row data={this.props.trending} title="Trending" />
         <Footer />
@@ -73,7 +66,6 @@ const mapStateToProps = (state) => {
     baseUrl: state.baseUrl,
     trending: state.trending,
     shows: state.shows,
-    genres: state.genres,
     splashImage: state.splashImage,
     imageDetails: state.imageDetails,
   };

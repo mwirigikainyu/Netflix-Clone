@@ -4,7 +4,6 @@ import {
   MOVIE,
   TRENDING,
   SHOWS,
-  GENRES,
   SPLASH_IMAGE,
   IMAGE_DETAILS,
 } from "../Actions";
@@ -16,7 +15,6 @@ const initialState = {
   movies: [],
   trending: [],
   shows: [],
-  genres: [],
   splashImage: "",
   imageDetails: [],
 };
@@ -47,11 +45,6 @@ const Reducer = (state = initialState, action) => {
       return {
         ...state,
         shows: action.value,
-      };
-    case GENRES:
-      return {
-        ...state,
-        genres: action.value,
       };
     case SPLASH_IMAGE:
       return {

@@ -1,7 +1,6 @@
 export const AUTHENTICATED = "AUTHENTICATED";
 export const MOVIES = "MOVIES";
 export const MOVIE = "MOVIE";
-export const GENRES = "GENRES";
 export const TRENDING = "TRENDING";
 export const SHOWS = "SHOWS";
 export const SPLASH_IMAGE = "SPLASH_IMAGE";
@@ -25,13 +24,6 @@ export const saveMovie = (movie) => {
   return {
     type: MOVIE,
     value: movie,
-  };
-};
-
-export const saveGenres = (genre) => {
-  return {
-    type: GENRES,
-    value: genre,
   };
 };
 
