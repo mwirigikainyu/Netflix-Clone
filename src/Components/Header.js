@@ -72,6 +72,12 @@ const HeaderDetails = styled.div`
 `;
 
 const Fade = styled.img`
+  @media (max-width: 768px) {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
   height: inherit;
   position: absolute;
   top: 0;
